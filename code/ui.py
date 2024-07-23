@@ -32,7 +32,7 @@ class UI:
         current_rect = bg_rect.copy()
         current_rect.width = current_width
         pygame.draw.rect(self.display_surface,color,current_rect)
-        pygame.draw.rect(self.display_surface,UI_BORDER_COLOR,bg_rect,2)
+        pygame.draw.rect(self.display_surface,UI_BORDER_COLOR,bg_rect,3)
 
     def show_exp(self,exp):
         text_surf = self.font.render(str(int(exp)),False,TEXT_COLOR)
